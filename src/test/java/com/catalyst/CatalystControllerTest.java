@@ -19,7 +19,6 @@ public class CatalystControllerTest {
 
     @Test
     public void shouldReturnHelloWorldFromController() throws Exception {
-        //Assertions.assertNotNull(controller.helloWorld());
         this.mockMvc.perform(get("/hello-world")).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello World")));
     }
