@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CatalystController {
 
-    @GetMapping("/helloWorld")
+    @GetMapping("/hello-world")
     public String helloWorld(){
         return "Hello world";
     }
